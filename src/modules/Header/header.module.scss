@@ -1,2 +1,20 @@
 @import '@/assets/styles/variables';
 @import '@/assets/styles/mixin';
+
+.header {
+  position: absolute;
+  inset: 0 0 auto 0;
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.5);
+}
+.headerInner {
+  @include between;
+
+  padding: 24px 0;
+}
+.headerControlls {
+  @include centered;
+  flex: 1;
+  gap: 40px;
+  margin: 0 40px;
+}

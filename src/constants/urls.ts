@@ -1,3 +1,11 @@
+export const appUrls = {
+  home: '/',
+  genres: '/genres',
+  genre: (name: string) => `/genres/${name}`,
+  movie: (name: string) => `/movie/${name}`,
+  profile: '/profile'
+}
+
 export const authUrls = {
   login: '/auth/login',
   logout: '/auth/logout',

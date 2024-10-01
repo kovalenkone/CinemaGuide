@@ -13,7 +13,7 @@
   font-family: 'Play';
   src: local('Play Bold'), local('Play-Bold'),
     url('../fonts/Play-Bold.ttf') format('truetype');
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -71,13 +71,6 @@ svg, svg path {
 
 input:focus {
   outline: none;
-}
-
-// common
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1260px;
 }
 
 

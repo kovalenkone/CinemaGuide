@@ -1,0 +1,17 @@
+@mixin centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

@@ -1,6 +1,8 @@
 @import '@/assets/styles/variables';
 @import '@/assets/styles/mixin';
 
-.footer {
-  padding: 42px 0;
+.container {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
 }

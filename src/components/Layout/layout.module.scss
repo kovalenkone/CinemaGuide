@@ -1,2 +1,13 @@
 @import '@/assets/styles/variables';
 @import '@/assets/styles/mixin';
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  & main {
+    padding-top: 96px;
+    flex: 1;
+  }
+}
