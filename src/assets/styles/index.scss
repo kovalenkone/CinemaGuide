@@ -1,0 +1,87 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixin';
+
+@font-face {
+  font-family: 'Play';
+  src: local('Play Regular'), local('Play-Regular'),
+    url('../fonts/Play-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Play';
+  src: local('Play Bold'), local('Play-Bold'),
+    url('../fonts/Play-Bold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  font-family: $font-family;
+  box-sizing: border-box;
+  color: $white-text;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 18px;
+  color: $white-text;
+  background-color: $black-bg;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: $font-family;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+svg, svg path {
+  transition: $trans-15;
+}
+
+input:focus {
+  outline: none;
+}
+
+// common
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1260px;
+}
+
+
+
+
+
+
