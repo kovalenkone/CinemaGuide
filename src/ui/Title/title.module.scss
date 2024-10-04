@@ -1,0 +1,17 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixin';
+.title {
+  font-weight: 700;
+}
+.title[data-color='white'] {
+  color: $white-text;
+}
+.title[data-color='grey'] {
+  color: $grey-text;
+}
+.title[data-size='default'] {
+  font-size: 40px;
+}
+.title[data-size='large'] {
+  font-size: 48px;
+}

@@ -1,9 +1,10 @@
 @import '@/assets/styles/variables';
 @import '@/assets/styles/mixin';
 
-.logo {
-  transition: $trans-15;
-}
-a.logo:hover {
-  opacity: .2;
+.topTen {
+  padding: 40px 0 120px;
+
+  h2 {
+    margin-bottom: 64px;
+  }
 }

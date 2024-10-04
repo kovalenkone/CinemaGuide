@@ -1,0 +1,30 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixin';
+
+.ratingBage {
+  @include centered;
+  gap: 4px;
+  font-weight: 700;
+  color: $white-text;
+  border-radius: 16px
+}
+.lg {
+  width: 70px;
+  height: 32px;
+}
+.sm {
+  width: 47px;
+  height: 20px;
+}
+.hight {
+  background-color: $green-bage;
+}
+.medium {
+  background-color: $yellow-bage;
+}
+.normal {
+  background-color: $grey-bage;
+}
+.low {
+  background-color: $red-bage;
+}

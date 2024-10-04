@@ -1,2 +1,18 @@
 @import '@/assets/styles/variables';
 @import '@/assets/styles/mixin';
+
+.navLink {
+  position: relative;
+  transition: $trans-15;
+  cursor: pointer;
+  padding: 8px 0;
+
+  &.active {
+    border-bottom: 2px solid #dc5dfc;;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $purple-hover;
+  }
+}

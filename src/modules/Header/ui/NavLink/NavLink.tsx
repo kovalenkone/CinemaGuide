@@ -17,13 +17,13 @@ const NavLink = ({ isCurrent, link }: NavLinkProps) => {
   return (
     <>
       {isCurrent ? (
-        <Link to={link.path} className={navLinkStyle}>
-          {link.name}
-        </Link>
-      ) : (
         <span className={navLinkStyle}>
           {link.name}
         </span>
+      ) : (
+        <Link to={link.path} className={navLinkStyle}>
+          {link.name}
+        </Link>
       )}
     </>
   );

@@ -1,0 +1,36 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixin';
+
+.detailsMovie {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.detailsMoviePreview {
+  height: 680px;
+  flex: 0 1 900px;
+}
+.detailsMovieInfo {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+}
+.detailsMovieInfoWrapper {
+  max-width: 600px;
+}
+.detailsMovieInfoTop {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.detailsMovieTitle {
+  margin-bottom: 16px;
+}
+.detailsMovieActions {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  gap: 16px;
+}

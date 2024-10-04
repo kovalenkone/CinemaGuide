@@ -1,0 +1,28 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixin';
+
+.button {
+  @include centered;
+  height: 56px;
+  border-radius: 28px;
+  font-size: 18px;
+  font-weight: 700;
+  color: $white-text;
+
+  & svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+.primary {
+  background-color: $grey-bg;
+}
+.secondary {
+  background-color: $purple-bg;
+}
+.sm {
+  padding: 0 22px;
+}
+.md {
+  padding: 0 48px;
+}

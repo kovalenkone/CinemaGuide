@@ -1,0 +1,15 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixin';
+
+.textSm {
+  font-size: 18px;
+}
+.textMd {
+  font-size: 24px;
+}
+.white {
+  color: $white-text;
+}
+.grey {
+  color: $grey-text;
+}
