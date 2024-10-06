@@ -1,0 +1,9 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixin';
+
+.image[data-image-fit='cover'] {
+  @include cover;
+}
+.image[data-image-fit='contain'] {
+  @include contain;
+}

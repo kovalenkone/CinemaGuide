@@ -1,11 +1,14 @@
+import { Movie } from "@/types/movie.type";
 import { createSlice } from "@reduxjs/toolkit";
 
 export interface MoviesState {
-  movies: string[]
+  randomMovie: Movie | null
+  topTenMovies: Movie[]
 }
 
 const initialState: MoviesState = {
-  movies: []
+  randomMovie: null,
+  topTenMovies: []
 }
 
 export const moviesSlice = createSlice({

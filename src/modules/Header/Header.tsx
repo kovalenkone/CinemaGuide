@@ -13,7 +13,7 @@ const Header = () => {
             <Navigation />
             <Search />
           </div>
-          <p>Вход</p>
+          <p>Войти</p>
         </div>
       </Container>
     </header>

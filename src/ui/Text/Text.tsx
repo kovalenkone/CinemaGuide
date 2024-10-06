@@ -1,27 +1,23 @@
+import { ReactNode } from 'react';
 import styles from './text.module.scss';
 import cn from 'classnames'
 
 interface TextProps {
   color?: 'white' | 'grey'
-  size?: 'sm' | 'md'
+  size?: 'sm' | 'default'
   isBold?: boolean,
-  value: string | number
+  children: ReactNode
 }
 
-const Text = ({ color = 'white', size = 'md', value, isBold = false }: TextProps) => {
-  const textStyle = cn(
-    {[styles.textSm]: size === 'sm'},
-    {[styles.textMd]: size === 'md'},
-    {[styles.white]: color === 'white'},
-    {[styles.grey]: color === 'grey'},
-  )
-
+const Text = ({ color = 'white', size = 'default', children, isBold = false }: TextProps) => {
   return (
-    <p 
-      className={textStyle}
+    <p
+      className={styles.text}
+      data-color={color}
+      data-size={size}
       style={{ fontWeight: isBold ? '700' : '400' }}
     >
-      {value}
+      {children}
     </p>
   );
 }

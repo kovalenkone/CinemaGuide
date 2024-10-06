@@ -5,10 +5,17 @@ import cn from 'classnames'
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   color?: 'primary' | 'secondary'
   size?: 'sm' | 'md'
+  isLoading?: boolean
   children: ReactNode
 }
 
-const Button = ({ color = 'primary', size = 'md', children, ...props }: ButtonProps) => {
+const Button = ({ 
+  color = 'primary', 
+  size = 'md',
+  isLoading, 
+  children, 
+  ...props 
+}: ButtonProps) => {
   const buttonClass = cn(
     styles.button,
     {[styles.primary]: color === 'primary'},

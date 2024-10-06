@@ -8,7 +8,20 @@ export const authRequests = {
 }
 
 export const moviesRequests = {
-  random: () => {
+  fetchRandom: () => {
     return api.get(moviesUrls.random)
+  },
+  fetchTopTen: () => {
+    return api.get(moviesUrls.topTen)
+  },
+  fetchGenres: () => {
+    return api.get(moviesUrls.genres)
+  },
+  fetchMoviesByGenre: (genre: string, count: number, page: number) => {
+    return api.get(moviesUrls.movie, { params: { genre, count, page }})
+  },
+  fetchMovieById: (id: string) => {
+    return api.get(moviesUrls.movieWithId(id))
   }
+  
 }

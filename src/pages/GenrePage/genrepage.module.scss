@@ -1,0 +1,13 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixin';
+
+.genrePage {
+  padding: 160px 0;
+}
+.genreTitle {
+  margin-bottom: 64px;
+
+  & a span::first-letter {
+    text-transform: uppercase;
+  }
+}

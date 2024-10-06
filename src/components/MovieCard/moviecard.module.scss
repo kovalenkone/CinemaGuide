@@ -23,13 +23,14 @@
 
   &:hover + img,
   &:focus-visible + img {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    transform-origin: center center;
   }
 }
 .movieCardImage {
   @include cover;
   border-radius: 16px;
-  transition: $trans-30
+  transition: $trans-20;
 }
 .movieCardNumber {
   @include centered;

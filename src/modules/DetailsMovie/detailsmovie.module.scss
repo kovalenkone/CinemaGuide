@@ -4,19 +4,22 @@
 .detailsMovie {
   position: relative;
   display: flex;
-  justify-content: flex-end;
 }
 .detailsMoviePreview {
-  height: 680px;
-  flex: 0 1 900px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 900px;
+  z-index: -1;
+
+  & img {
+    @include cover;
+  }
 }
 .detailsMovieInfo {
-  position: absolute;
-  top: 200px;
-  left: 0;
-  right: 0;
-}
-.detailsMovieInfoWrapper {
+  padding-top: 200px;
+  padding-bottom: 122px;
   max-width: 600px;
 }
 .detailsMovieInfoTop {

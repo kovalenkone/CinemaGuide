@@ -1,8 +1,10 @@
 export const appUrls = {
   home: '/',
   genres: '/genres',
-  genre: (name: string) => `/genres/${name}`,
-  movie: (name: string) => `/movie/${name}`,
+  genre: `/genres/:genre`,
+  genGenreUrl: (genre: string) => `/genres/${genre}`,
+  movie: `/movie/:id`,
+  genMovieUrl: (id: number) => `/movie/${id}`,
   profile: '/profile'
 }
 

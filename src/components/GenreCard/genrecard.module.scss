@@ -1,0 +1,39 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixin';
+
+.genreCard {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+  box-shadow: 0 0 80px 0 rgba(255, 255, 255, 0.33);
+  overflow: hidden;
+
+  :is(&:hover, &:focus-visible) .genreCardTitle {
+    color: $purple-hover;
+  }
+
+  :is(&:hover, &:focus-visible) .genreCardImage img {
+    transform: scale(1.1);
+  }
+}
+.genreCardImage {
+  height: 220px;
+  overflow: hidden;
+
+  & img {
+    transition: $trans-20;
+  }
+}
+.genreCardBody {
+  display: flex;
+  justify-content: center;
+  padding: 22px 0 30px;
+}
+.genreCardTitle {
+  font-size: 24px;
+  font-weight: 700;
+  transition: $trans-15;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}

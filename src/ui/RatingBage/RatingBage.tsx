@@ -1,6 +1,7 @@
 import StarIcon from '@/assets/icons/StarIcon';
 import styles from './ratingbage.module.scss';
 import cn from 'classnames'
+import { formatRating } from '@/utils/formatRating';
 
 interface RatingBageProps {
   rating: number
@@ -21,7 +22,7 @@ const RatingBage = ({ rating, size = 'lg' }: RatingBageProps) => {
   return (
     <span className={ratingBageStyle}>
       <StarIcon />
-      {rating}
+      {formatRating(rating)}
     </span>
   );
 }

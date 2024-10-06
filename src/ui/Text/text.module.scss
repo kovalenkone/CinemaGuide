@@ -1,15 +1,15 @@
 @import '@/assets/styles/variables';
 @import '@/assets/styles/mixin';
 
-.textSm {
+.text[data-size='sm'] {
   font-size: 18px;
 }
-.textMd {
+.text[data-size='default'] {
   font-size: 24px;
 }
-.white {
+.text[data-color='white'] {
   color: $white-text;
 }
-.grey {
+.text[data-color='grey'] {
   color: $grey-text;
 }
