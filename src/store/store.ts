@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
-import moviesReducer from './slices/movies.slice'
+import modalsReducer from './slices/modals.slice'
 
 export const store = configureStore({
   reducer: {
-    movies: moviesReducer,
+    modals: modalsReducer,
   },
   devTools: true
 })

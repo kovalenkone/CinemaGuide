@@ -1,0 +1,22 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixin';
+
+.registerFormWrapper {
+  width: 100%;
+}
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.registerFormFields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+.registerFormRegister {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+}

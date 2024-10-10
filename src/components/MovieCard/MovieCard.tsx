@@ -2,6 +2,7 @@ import { Movie } from '@/types/movie.type';
 import styles from './moviecard.module.scss';
 import { Link } from 'react-router-dom';
 import { appUrls } from '@/constants/urls';
+import { Image } from '@/ui';
 
 interface MovieCardProps {
   movie: Movie
@@ -23,10 +24,11 @@ const MovieCard = ({ movie, topNumber }: MovieCardProps) => {
           aria-label={`Ссылка на фильм: ${movie.originalTitle}`}>
           {movie.originalTitle}
         </Link>
-        <img 
+        <Image 
           className={styles.movieCardImage} 
           src={movie.posterUrl} 
           alt={movie.originalTitle}
+      
         />
       </div>
     </article>

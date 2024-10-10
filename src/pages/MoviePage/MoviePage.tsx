@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Movie } from '@/types/movie.type';
 import { moviesRequests } from '@/api/requests';
+import AboutMovie from './components/AboutMovie/AboutMovie';
 
 const MoviePage = () => {
   const [movie, setMovie] = useState<Movie | null>(null)
@@ -26,7 +27,10 @@ const MoviePage = () => {
   return (
     <section className={styles.moviePage}>
       {movie ? (
-        <DetailsMovie movie={movie} />
+        <>
+          <DetailsMovie movie={movie} />
+          <AboutMovie movie={movie} />
+        </>
       ) : (
         <p>Кино не найдено</p>
       )}

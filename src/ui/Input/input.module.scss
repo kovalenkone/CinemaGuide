@@ -1,0 +1,32 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixin';
+
+.inputWrapper {
+  position: relative;
+
+  &:has(svg) input {
+    padding-left: 52px;
+  }
+
+  & svg {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+  }
+}
+.input {
+  padding: 0 16px;
+  height: 56px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  font-size: 18px;
+
+  &::placeholder {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+}

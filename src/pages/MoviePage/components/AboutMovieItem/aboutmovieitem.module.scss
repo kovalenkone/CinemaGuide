@@ -1,0 +1,20 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixin';
+
+.aboutMovieItem {
+  display: flex;
+  font-size: 24px;
+
+  & span:first-of-type {
+    display: flex;
+    width: 320px;
+    white-space: nowrap;
+
+    &::after {
+      content: '';
+      width: 100%;
+      margin: 0 8px 4px 4px;
+      background: url('../../../../assets/images/dots.svg') left bottom repeat-x;
+    }
+  }
+}

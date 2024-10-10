@@ -24,10 +24,10 @@ const HomePage = () => {
   }
 
   useEffect(() => {
+    console.log('2')
     axios.all(
       [getRandomMovie(), getTopTenMovie()]
     )
-    formatTime(92)
   }, [])
 
   return (

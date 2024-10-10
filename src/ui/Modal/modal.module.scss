@@ -1,0 +1,56 @@
+@import '@/assets/styles/variables';
+@import '@/assets/styles/mixin';
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: $trans-15;
+}
+.overlay[data-modal-visible="false"] {
+  opacity: 0;
+  visibility: hidden;
+}
+.overlay[data-modal-visible="true"] {
+  opacity: 1;
+  visibility: visible;
+}
+.modal {
+  position: relative;
+  width: 100%;
+}
+.modal[data-modal-size="default"] {
+  max-width: 420px;
+}
+.modal[data-modal-size="large"] {
+  max-width: 540px;
+}
+.closeModalButton {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 24px);
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  border-radius: 50%;
+  @include centered;
+
+  & svg {
+    transition: transform .35s ease;
+  }
+
+  &:hover svg,
+  &:focus-visible svg {
+    transform: rotate(180deg);
+  }
+
+  &:hover svg path,
+  &:focus-visible svg path {
+    fill: $purple-hover;
+  }
+}

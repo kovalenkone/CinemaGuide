@@ -1,9 +1,16 @@
-import { moviesUrls } from "@/constants/urls"
+import { authUrls, moviesUrls } from "@/constants/urls"
 import { api } from "./api"
+import { loginParams, registerParams } from "@/types/auth.type"
 
 export const authRequests = {
-  login: () => {
-    
+  login: (data: loginParams) => {
+    return api.post(authUrls.login, data)
+  },
+  register: (data: registerParams) => {
+    return api.post(authUrls.user, data)
+  },
+  profile: () => {
+    return api.get(authUrls.profile)
   }
 }
 
